@@ -46,3 +46,14 @@ print(liczby)
 
 liczby = liczby*3
 print(liczby)
+
+
+rasa = ["dalmatyńczyk","buldog angielski","husky"]
+cenaras = [6000,7500,4500]
+
+sklepzoo = [[rasa,"kot","papuga","szynszyla","mysz"],[cenaras,3000,9000,250,50]]
+
+print(sklepzoo[0])
+print(sklepzoo[0][0])
+print(sklepzoo[0][0],", cena:",sklepzoo[1][0],"zł")
+print(sklepzoo[0][0][1],", cena:",sklepzoo[1][0][1],"zł")
