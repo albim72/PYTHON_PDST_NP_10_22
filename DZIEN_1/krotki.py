@@ -32,3 +32,15 @@ print(type(mojakrotka))
 #wstaw na pozycję o indeksie 2 wartość -0.006
 #wstaw na końcu wartość 1000
 #wyświetl krotkę
+
+mojalista = list(mojakrotka)
+mojalista.remove(77)
+it = mojalista.index("Toruń")
+print(it)
+mojalista[it] = "Kielce"
+mojalista.insert(2,-0.006)
+mojalista.append(1000)
+
+mojakrotka = tuple(mojalista)
+print(mojakrotka)
+print(type(mojakrotka))
