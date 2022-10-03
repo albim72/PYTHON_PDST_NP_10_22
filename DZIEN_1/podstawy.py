@@ -56,3 +56,13 @@ print(6*math.exp(4))
 u = 1
 u+=1
 print(u)
+
+
+tx = "lajkonik"
+print(tx)
+print(tx[0])
+print(tx[1])
+print(tx[2:6])
+print(tx[3:])
+print(tx[:5])
+print(tx[-1])
