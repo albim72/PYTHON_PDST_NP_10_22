@@ -44,3 +44,13 @@ mojalista.append(1000)
 mojakrotka = tuple(mojalista)
 print(mojakrotka)
 print(type(mojakrotka))
+
+sam1 = ("Audi","Q7",4.6,2020,25600)
+
+(marka,model,poj,rocznik,przebieg) = sam1
+
+print(marka)
+print(model)
+print(poj)
+print(rocznik)
+print(przebieg)
