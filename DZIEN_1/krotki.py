@@ -21,3 +21,14 @@ animal = animal + anim2
 print(animal)
 
 ob = ["obiekt77",77,0,False,"Toruń",99.99,"abc"]
+
+mojakrotka = tuple(ob)
+
+print(mojakrotka)
+print(type(mojakrotka))
+
+#zmodyfikuj krotkę:
+#usuń wartość 77, zamień "Toruń" na "Kielce"
+#wstaw na pozycję o indeksie 2 wartość -0.006
+#wstaw na końcu wartość 1000
+#wyświetl krotkę
