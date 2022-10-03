@@ -37,3 +37,30 @@ print("________________lista itemów_______________________________")
 
 for x,y in samochod.items():
     print(x,":",y)
+
+autokomis = {
+    "auto1":{
+        "marka":"Ford",
+        "model":"Mustang",
+        "rocznik":1974
+        },
+    "auto2":{
+        "marka":"Opel",
+        "model":"Vectra",
+        "rocznik":2008
+        },
+    "auto3":{
+        "marka":"Jeep",
+        "model":"Cherokee",
+        "rocznik":2019
+        }
+
+}
+
+print(autokomis)
+
+for a in autokomis.values():
+    print(a)
+
+
+print(autokomis["auto2"]["marka"])
