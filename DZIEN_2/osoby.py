@@ -42,3 +42,29 @@ print("___________________________________________________")
 p1.print_osoba()
 p3 = Osoba("Karol",40,168,70)
 p3.print_osoba()
+
+
+
+class Pracownik(Osoba):
+
+    #konstruktor z dziedziczeniem
+    def __init__(self,imie,wiek,wzrost,waga,firma,stanowisko,latapracy,wynagrodzenie):
+        super().__init__(imie,wiek,wzrost,waga)
+        self.firma = firma
+        self.stanowisko = stanowisko
+        self.latapracy = latapracy
+        self.wynagrodzenie = wynagrodzenie
+
+    def print_pracownik(self):
+        print(f"dane pracownika -> firma: {self.firma}, stanowisko pracy: {self.stanowisko}, lata pracy: {self.latapracy}, "
+              f"wynagrodzenie: {self.wynagrodzenie} zł")
+
+    def czypracownik(self):
+        return True
+
+print("______________________________________")
+e1 = Pracownik("Adam",41,179,88,"ABC","dyektor",12,10900)
+e1.print_osoba()
+e1.print_pracownik()
+print(f"wiek za 10 lat: {e1.wiekza10lat()}")
+print(f"czy osoba jest pracownikiem? ({e1.czypracownik()})")
