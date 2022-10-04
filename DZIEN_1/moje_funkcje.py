@@ -42,3 +42,15 @@ print(policz(3,6,2))
 wynik = policz(4.5,6.7,8)
 print(wynik)
 print(f)
+
+
+#funkcja 4 -> opcjonalne parametry
+
+def miasta(miasto3,miasto2="Toruń",miasto1="Kraków"):
+    print("miasto tygodnia:",miasto1,", drugie miejsce:",miasto2,", trzecie miejsce:",miasto3)
+
+miasta("Katowice","Gniezno","Gdańsk")
+miasta("Katowice","Gniezno")
+miasta("Katowice")
+miasta("Gliwice",None,"Zamość")
+miasta("Gliwice",miasto1="Zamość")
