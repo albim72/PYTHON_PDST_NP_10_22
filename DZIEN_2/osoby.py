@@ -22,3 +22,23 @@ class Osoba:
     
     def czypracownik(self):
         return False
+
+    
+    p1 = Osoba("Jan",34,178,108)
+p1.print_osoba()
+print(f"wiek za 10 lat: {p1.wiekza10lat()}")
+print(f"czy osoba jest pracownikiem? ({p1.czypracownik()})")
+
+print("___________________________________________________")
+
+
+p2 = Osoba("Olga",27,165,57)
+p2.kolor_oczu = "niebieskie"
+p2.print_osoba()
+print(f"wiek za 10 lat: {p2.wiekza10lat()}")
+print(f"czy osoba jest pracownikiem? ({p2.czypracownik()})")
+
+print("___________________________________________________")
+p1.print_osoba()
+p3 = Osoba("Karol",40,168,70)
+p3.print_osoba()
