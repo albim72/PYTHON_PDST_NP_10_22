@@ -24,3 +24,21 @@ rabs = [0,8,10,12,15,20,25]
 
 
 #dodatkowo: zapisz kwoty które policzyliśmy dla każdego rabatu do tablicy wynik =[]
+
+wynik = []
+for r in rabs:
+    kw = kwota (1700, 1230, 450, 200, 180, r)
+
+    if r == 0:
+        print ("cena bazowa do zapłaty wynosi:",kw,"zł")
+
+    else:
+        print ("dla rabatu:", r, "%, kwota do zapłaty wynosi:", kw,"zł")
+
+    wynik.append(kw)
+
+
+print (wynik)
+
+result = [kwota(1700,1230,450,200,180,r) for r in rabs]
+print(result)
