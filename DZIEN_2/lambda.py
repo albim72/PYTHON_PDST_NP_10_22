@@ -19,3 +19,16 @@ def multi(n):
 h = multi(6)
 print(h(8))
 print(multi(12)(5))
+
+nb = [56,12,3,7,9,14,20,2,4,5,101,99,90,40]
+
+#zadanie1 -> stwórz nową listę parzyste i przkaż do niej wszytkie wartości parzyste z listy nb
+#filter(funkcja z warunkami,dane)
+
+parzyste = list(filter(lambda x:x%2==0,nb))
+print(parzyste)
+
+#zadanie2 - > stwórz nową listę cube i przekaż (zamapuj) do niej wartości z listy nb podniesione każda do potęgi trzeciej
+
+cube = list(map(lambda x:x**3,nb))
+print(cube)
