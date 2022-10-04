@@ -63,3 +63,23 @@ def zamki(id,*zamek,rabat):
 
 zamki(1,"Malbork","Ogrodzieniec","Czersk",rabat=20)
 zamki(2,"Janowiec","Malbork","Będzin","Ogrodzieniec","Czersk","Chojnik",rabat=5)
+
+
+#funkcja 6 -> wywołanie funckji z iterowanym argumentem
+
+temp = [10.4,11.8,11.7,9.8,15.6,17,14.6]
+pop_temp = []
+
+#temperatura popołudniu jest 25% wyższa od porannej wyznacz temperatury popołudniowe kolejnych dni i wpisz je
+#do listy którą nazwisz pop_temp[]
+
+def show_temp(t):
+    print("odczyt temperatury [godzina 9.00]:",t)
+
+
+for t in temp:
+    show_temp(t)
+    pop_temp.append(t * 1.25)
+
+print(pop_temp)
+
