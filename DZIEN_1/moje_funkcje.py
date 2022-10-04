@@ -54,3 +54,12 @@ miasta("Katowice","Gniezno")
 miasta("Katowice")
 miasta("Gliwice",None,"Zamość")
 miasta("Gliwice",miasto1="Zamość")
+
+
+#funkcja 5 -> lista argumentów
+
+def zamki(id,*zamek,rabat):
+    print("zamek tygodnia:", zamek[0]," - rabat: ",rabat, "zł, drugie miejsce:", zamek[1], ", trzecie miejsce:", zamek[2])
+
+zamki(1,"Malbork","Ogrodzieniec","Czersk",rabat=20)
+zamki(2,"Janowiec","Malbork","Będzin","Ogrodzieniec","Czersk","Chojnik",rabat=5)
