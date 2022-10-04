@@ -12,6 +12,6 @@ def kwota(t,nw,w,u,i,rab=0):
     else:
         return "podaj rabat mniejszy niż 71% lub większy od 0"
 
-print(f"{kwota(100,100,50,50,50):.2f} zł")
-print(f"{kwota(100,100,50,50,50,25):.2f} zł")
-print(f"{kwota(100,100,50,50,50,75)} zł")
+print("kwota do zapłaty",kwota(100,100,50,50,50),"zł")
+print("kwota do zapłaty",kwota(100,100,50,50,50,25),"zł")
+print("kwota do zapłaty",kwota(100,100,50,50,50,75),"zł")
