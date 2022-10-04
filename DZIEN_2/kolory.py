@@ -10,3 +10,14 @@ class Kolor:
 
     def print_kolor(self):
         print(f"kolor -> id: {self.idkoloru}, nazwa: {self.nazwa}")
+
+        
+#tworzenie obiektu
+k1 = Kolor(23,"czerwony")
+k2 = Kolor(12,"zielony")
+
+k1.print_kolor()
+k2.paleta = "Paleta A"
+k2.print_kolor()
+k3=Kolor(9,"seledyn")
+k3.print_kolor()
