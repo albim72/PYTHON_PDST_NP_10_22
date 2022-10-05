@@ -4,15 +4,15 @@ try:
     f = open("waznedane.txt","r",encoding="utf-8")
     s = f.readline()
     i = int(s.strip())
-    raise Exception(d=i/0)
+    #raise Exception(d=i/0)
+    d=i/0
 except OSError as err:
     print(f"błąd systemowy: {err}")
 except ValueError:
     print("nie można przekonwertować danych z str do int")
-except Exception as ecc:
-    print(f"Klasa błędu: {type(ecc)}")
-    print(ecc.args)
-    print(ecc)
+# except Exception as ecc:
+#     print(f"Klasa błędu: {type(ecc)}")
+#     print(ecc.args)
+#     print(ecc)
 except:
     print(f"nieoczekiwany błąd: {sys.exc_info()[0]}")
-    raise
