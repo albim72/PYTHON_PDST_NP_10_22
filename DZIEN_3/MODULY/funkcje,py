@@ -1,0 +1,7 @@
+import math
+
+def bilbioteka(miasto,filia,tytul):
+    return f"bilbioteka publiczna filia nr: {filia}, miasto: {miasto}, tytuł książki: {tytul}"
+
+def hx(n,m):
+    return n*math.exp(m-3)
