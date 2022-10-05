@@ -35,7 +35,7 @@ class Osoba:
             return "nadwaga"
         else:
             return "otyłość"
-        
+
     def policz_ppm(self,plec):
         if plec == "k":
             return 655.1 + 9.563 * self.waga+1.85 * self.wzrost - 4.676 * self.wiek
@@ -44,12 +44,12 @@ class Osoba:
         else:
             return "podaj k lub m!"
 
-
 p1 = Osoba("Jan",34,178,108)
 p1.print_osoba()
 print(f"wiek za 10 lat: {p1.wiekza10lat()}")
 print(f"czy osoba jest pracownikiem? ({p1.czypracownik()})")
 print(f"bmi ciała wynosi: {p1.bmi():.2f}, opis: {p1.opis_bmi()}")
+print(f"zapotrzebowanie energetyczne: {p1.policz_ppm('m'):.2f} kcal")
 
 print("___________________________________________________")
 
@@ -59,6 +59,8 @@ p2.kolor_oczu = "niebieskie"
 p2.print_osoba()
 print(f"wiek za 10 lat: {p2.wiekza10lat()}")
 print(f"czy osoba jest pracownikiem? ({p2.czypracownik()})")
+print(f"bmi ciała wynosi: {p2.bmi():.2f}, opis: {p2.opis_bmi()}")
+print(f"zapotrzebowanie energetyczne: {p2.policz_ppm('k'):.2f} kcal")
 
 print("___________________________________________________")
 p1.print_osoba()
