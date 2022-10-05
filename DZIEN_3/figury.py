@@ -32,3 +32,15 @@ print(f"pole trójkąta wynosi: {tr.policz_pole():.2f}")
 
 #Stwórz klasę Kolo dziedziczącą klasę Figura, policz pole koła dla promienia równego 5.5
 #pole koła -> math.pi*a**2
+
+class Kolo(Figura):
+
+    def __init__(self,a):
+        super().__init__(a,0)
+
+    def policz_pole(self):
+        return math.pi*self.a**2
+
+
+kl = Kolo(5.5)
+print(f"pole koła wynosi: {kl.policz_pole():.2f}")
