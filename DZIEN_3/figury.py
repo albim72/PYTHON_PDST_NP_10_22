@@ -30,3 +30,5 @@ tr = Trojkat(6.8,5.9)
 print(f"pole trójkąta wynosi: {tr.policz_pole():.2f}")
 
 
+#Stwórz klasę Kolo dziedziczącą klasę Figura, policz pole koła dla promienia równego 5.5
+#pole koła -> math.pi*a**2
