@@ -19,15 +19,29 @@ class Osoba:
 
     def wiekza10lat(self):
         return self.wiek + 10
-    
+
     def czypracownik(self):
         return False
 
-    
-    p1 = Osoba("Jan",34,178,108)
+    def bmi(self):
+        return self.waga/(self.wzrost/100)**2
+
+    def opis_bmi(self):
+        if self.bmi() < 18.5:
+            return "niedowaga"
+        elif self.bmi() <= 25:
+            return "waga prawidłowa"
+        elif self.bmi() <= 30:
+            return "nadwaga"
+        else:
+            return "otyłość"
+
+
+p1 = Osoba("Jan",34,178,108)
 p1.print_osoba()
 print(f"wiek za 10 lat: {p1.wiekza10lat()}")
 print(f"czy osoba jest pracownikiem? ({p1.czypracownik()})")
+print(f"bmi ciała wynosi: {p1.bmi():.2f}, opis: {p1.opis_bmi()}")
 
 print("___________________________________________________")
 
@@ -42,7 +56,6 @@ print("___________________________________________________")
 p1.print_osoba()
 p3 = Osoba("Karol",40,168,70)
 p3.print_osoba()
-
 
 
 class Pracownik(Osoba):
@@ -83,8 +96,9 @@ class Sport:
 class Dodatkowa:
     pass
 
+
 class Student(Pracownik,Sport,Dodatkowa):
-    
+
     #konstruktor z wielodziedziczeniem
     def __init__(self,imie,wiek,wzrost,waga,nr_studenta,wydzial,kierunek,rok_stud,
                  firma="",stanowisko="",latapracy="",wynagrodzenie="",dyscyplina="",lata_upr="",best_wynik=""):
@@ -94,8 +108,8 @@ class Student(Pracownik,Sport,Dodatkowa):
         self.wydzial = wydzial
         self.kierunek = kierunek
         self.rok_stud = rok_stud
-        
-        
+
+
     def print_student(self):
         print(f"student nr {self.nr_studenta}, wydział: {self.wydzial}, kierunek: {self.kierunek}, "
               f" rok studiów: {self.rok_stud}.")
@@ -108,8 +122,6 @@ class Student(Pracownik,Sport,Dodatkowa):
     #         return False
     #     else:
     #         return True
-
-    
 print("___________________Student __________________")
 
 s1 = Student("Olaf",22,176,79,545435,"Matematyka,Fiyka i Informatyka","Informatyka",3)
@@ -138,3 +150,7 @@ s3.print_student()
 s3.infosport()
 print(f"wiek za 10 lat: {s3.wiekza10lat()}")
 print(f"czy student jest pracownikiem? ({s3.czypracownik()})")
+print(f"bmi ciała wynosi: {s3.bmi():.2f}, opis: {s3.opis_bmi()}")
+
+
+
