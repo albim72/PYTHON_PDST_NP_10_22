@@ -108,3 +108,33 @@ class Student(Pracownik,Sport,Dodatkowa):
     #         return False
     #     else:
     #         return True
+
+    
+print("___________________Student __________________")
+
+s1 = Student("Olaf",22,176,79,545435,"Matematyka,Fiyka i Informatyka","Informatyka",3)
+s1.print_osoba()
+s1.print_student()
+print(f"wiek za 10 lat: {s1.wiekza10lat()}")
+print(f"czy student jest pracownikiem? ({s1.czypracownik()})")
+
+
+print("________________Student -> Pracownik_____________________")
+
+s2 = Student("Olga",23,170,58,97755,"Wydział Budowlany","Architektura",4,"XYZ","pomocnik architekta",1,2700)
+s2.print_osoba()
+s2.print_pracownik()
+s2.print_student()
+print(f"wiek za 10 lat: {s2.wiekza10lat()}")
+print(f"czy student jest pracownikiem? ({s2.czypracownik()})")
+
+
+print("________________Student -> Sportowiec_____________________")
+
+s3 = Student("Robert",22,180,76,454656,"Wydział Nauk Społecznych","Socjologia",3,dyscyplina="biegi ultra", lata_upr=5,
+             best_wynik="102km -> 18h 56min 23s")
+s3.print_osoba()
+s3.print_student()
+s3.infosport()
+print(f"wiek za 10 lat: {s3.wiekza10lat()}")
+print(f"czy student jest pracownikiem? ({s3.czypracownik()})")
