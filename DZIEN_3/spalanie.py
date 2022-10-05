@@ -25,7 +25,12 @@ class IDanePojazdu:
     def silnik(self):raise NotImplementedError
 
 
+#zaimplementuj klasę  IDanPojazdu jako drugą klasę w klasie Pojazd
+#w klasie Pojzad - stwórz konstruktor(marka,model,rocznik,rodzaj_silnika,poj,moc)
+#zaimplementuj metodę -> opispojazdu() -> wypisz wartości konstruktora: marka,model,rocznik
+#zaimplementuj metodę -> silnik() -> wypisz wartości konstruktora: rodzaj_silnika,poj,moc
 
+#wyświelt dane pojazdu przed wyznaczeniem kosztów spalania
 class Pojazd(IPojzad):
 
     def spalanie(self, litry, odl):
@@ -39,6 +44,8 @@ p1 = Pojazd()
 lt = float(input("podaj ile litrów paliwa spalił samochód podczas przejazdu: "))
 odl = float(input("podaj długość trasy: "))
 cn = float(input("podaj cenę za litr paliwa: "))
+
+#opis pojazdu
 
 print(f"spalanie [l/100km] wynosi: {p1.spalanie(lt,odl):.2f}")
 print(f"koszty przejazdu na trasie: {odl} km wynoszą {p1.kosztyprzejzadu(lt,odl,cn):.2f} zł")
