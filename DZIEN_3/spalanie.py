@@ -18,7 +18,12 @@ class IDanePojazdu:
 
     __metaclass__ = ABCMeta
 
-    
+    @abstractmethod
+    def opispojazdu(self):raise NotImplementedError
+
+    @abstractmethod
+    def silnik(self):raise NotImplementedError
+
 
 
 class Pojazd(IPojzad):
