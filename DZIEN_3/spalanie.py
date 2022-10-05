@@ -10,6 +10,16 @@ class IPojzad:
     @abstractmethod
     def kosztyprzejzadu(self,litry,odl,cena_l):raise NotImplementedError
 
+#stwórz interfejs opcujący nowe metody IDanePojazdu
+#stworz metody abstrakcyjne: opispojzadu() oraz silnik()
+
+
+class IDanePojazdu:
+
+    __metaclass__ = ABCMeta
+
+    
+
 
 class Pojazd(IPojzad):
 
