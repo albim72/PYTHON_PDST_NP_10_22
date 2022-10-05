@@ -10,8 +10,7 @@ class IPojzad:
     @abstractmethod
     def kosztyprzejzadu(self,litry,odl,cena_l):raise NotImplementedError
 
-        
-        
+
 class Pojazd(IPojzad):
 
     def spalanie(self, litry, odl):
@@ -19,3 +18,12 @@ class Pojazd(IPojzad):
 
     def kosztyprzejzadu(self, litry, odl, cena_l):
         return self.spalanie(litry,odl)*(odl/100)*cena_l
+
+
+p1 = Pojazd()
+lt = float(input("podaj ile litrów paliwa spalił samochód podczas przejazdu: "))
+odl = float(input("podaj długość trasy: "))
+cn = float(input("podaj cenę za litr paliwa: "))
+
+print(f"spalanie [l/100km] wynosi: {p1.spalanie(lt,odl):.2f}")
+print(f"koszty przejazdu na trasie: {odl} km wynoszą {p1.kosztyprzejzadu(lt,odl,cn):.2f} zł")
