@@ -25,3 +25,7 @@ Krok3
 # P <= 2.4 Pmax -> 250
 #powyzej 2.4 -> większe niż 250
 #zaimplementuj obowiązkowo metodę naped() i skonstruuj ją w sposób opisujący napęd samochodu
+
+
+krok 4
+#Stówrz obiekt klasy Rower oraz obiekt klasy Samochod i wykonaj na nim wybrane metody
