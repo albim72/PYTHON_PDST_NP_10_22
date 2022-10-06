@@ -11,8 +11,32 @@ class Book:
 
 
     def _info(self):
-        print("*****dodano nową książkę****")
+        print("*****dodano nową książkę*****")
         print(f"tytuł: {self.tytul}, autor: {self.autor}")
 
+    def get_tytul(self):
+        return self.tytul
 
-ks1 = Book(1,"Wiedźmin","Andrzej Sapkowski","Iskra",270,"Fantasy")
+    def get_autor(self):
+        return self.autor
+
+    def set_tytul(self,tytul):
+        self.tytul = tytul
+
+    def set_autor(self,autor):
+        self.autor = autor
+
+    def info_book(self):
+        return f"Książka -> tytuł: {self.get_tytul()}, autor: {self.get_autor()}"
+
+
+ks1 = Book(1,"Wiedźma","Andrzej Klin","Iskra",270,"Fantasy")
+print(f"tytuł książki: {ks1.get_tytul()}")
+print(f"autor książki: {ks1.get_autor()}")
+
+ks1.set_autor("Andrzej Sapkowski")
+ks1.set_tytul("Wiedźmin")
+
+print("___________________________________________")
+
+print(ks1.info_book())
