@@ -40,3 +40,17 @@ ks1.set_tytul("Wiedźmin")
 print("___________________________________________")
 
 print(ks1.info_book())
+
+class Seria(Book):
+    
+    def __init__(self,id,tytul,autor,wyd,lstron,gatunek,nazwa_serii,objetosc,lata):
+        super().__init__(id,tytul,autor,wyd,lstron,gatunek)
+        self.nazwa_serii = nazwa_serii
+        self.objetosc = objetosc
+        self.lata = lata
+        
+    def get_nazwa_serii(self):
+        return self.nazwa_serii
+    
+    def set_nazwa_serii(self,nazwa_serii):
+        self.nazwa_serii = nazwa_serii
