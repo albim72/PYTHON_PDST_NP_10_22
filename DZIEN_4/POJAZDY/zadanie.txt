@@ -5,3 +5,9 @@ Krok 1
 #stwórz dla tej klasy metody getter i setter oraz metodę abstrakcyjną naped()
 
 
+Krok 2
+#w nowym module rower -> stwórz klasę Rower (dziedziczącą Pojzad) z konstruktorem pobraanym z dzidziczenia plus następujące pola:
+#przerzutka, waga_ramy, blotniki
+#dopisz gety i sety dla tych pól (3)
+#napisz metodę daneroweru() -> wypisz (za pomocą getów) informacje: marka,model,rok_prod,waga_ramy
+#zaimplementuj metodę naped() -> wypisz (za pomocą getów) dane: przerzutka oraz rodzaj_napędu
