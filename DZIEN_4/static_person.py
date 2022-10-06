@@ -13,3 +13,13 @@ class Person:
     @staticmethod
     def isAdult(age):
         return age>18
+person1 = Person('Roman',21)
+person2 = Person.from_birth_day('Leon',1998)
+
+print(person1.age)
+print(person2.age)
+
+print(Person.isAdult(22))
+
+#print(person1.isAdult())
+print(Person.from_birth_day('Ola',24))
