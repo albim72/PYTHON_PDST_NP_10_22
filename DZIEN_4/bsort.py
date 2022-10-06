@@ -16,3 +16,15 @@ def bsort_classic(a):
 
 bsort_classic(pomniejsz_tab(nazwa_classic))
 print(nazwa_classic)
+
+nazwa_modern = ['samolot','miecz','mecz','Mieczysław','romb','Roman','marchewka',
+                 'zenit','piorun','macierz','123']
+
+def bsort_modern(a):
+    for _ in range(len(a)):
+        for i in range(1,len(a)):
+            if a[i] < a[i-1]:
+                a[i-1],a[i] = a[i],a[i-1]
+
+bsort_modern(pomniejsz_tab(nazwa_modern))
+print(nazwa_modern)
