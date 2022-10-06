@@ -14,3 +14,20 @@ print(osoba(powitanie,"Ola",81))
 
 print(osoba(procenty,"Roman",78))
 print(osoba(procenty,"Ola",81))
+
+
+#przypadek nr 2
+
+def egzamin(jesli):
+    def zaliczony():
+        return "Gratulacje, zdanego egzaminu!"
+    def oblany():
+        return "Przykro mi, następnym razem będzie lepiej!"
+    if jesli == "tak":
+        return zaliczony
+    else:
+        return oblany
+
+print(egzamin("tak")())
+print(egzamin("nie")())
+print(egzamin("blabla")())
