@@ -5,7 +5,7 @@
 #po wywołaniu funckji przekaż wyniki do wyizolowanych zmiennych i wypisz je na ekranie!
 
 
-dane = [9,3]
+dane = []
 
 def dzialania(d):
     dod = d[0] + d[1]
@@ -16,7 +16,10 @@ def dzialania(d):
     pot = d[0]**d[1]
     return dod,odej,mno,dziel,mod,pot
 
-
+a = int(input("podaj wartość a: "))
+b = int(input("podaj wartość b: "))
+dane.append(a)
+dane.append(b)
 dod,odej,mno,dziel,mod,pot = dzialania(dane)
 
 print(f"a={dane[0]}, b={dane[1]} -> \ndodawanie a+b: {dod}\n"
