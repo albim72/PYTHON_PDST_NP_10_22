@@ -27,3 +27,20 @@ print()
 print("______________________________________")
 for i in range(18):
     print(next(iterators), end=" ")
+
+    
+ #przyklad 4
+
+from itertools import product
+
+print("iloczyn kartezjański z użyciem repeat:")
+print(list(product([1,2], repeat=2)))
+print()
+
+print("iloczyn kartezjański przez container:")
+print(list(product(fitness,'2')))
+print()
+
+print("iloczyn kartezjański przez container:")
+print(list(product(fitness,[2,3,5])))
+print()
