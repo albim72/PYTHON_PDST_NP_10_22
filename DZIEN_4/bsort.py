@@ -19,12 +19,11 @@ print(nazwa_classic)
 
 nazwa_modern = ['samolot','miecz','mecz','Mieczysław','romb','Roman','marchewka',
                  'zenit','piorun','macierz','123']
-
-def bsort_modern(a):
+def bsort_modern_rev(a):
     for _ in range(len(a)):
         for i in range(1,len(a)):
-            if a[i] < a[i-1]:
+            if a[i] > a[i-1]:
                 a[i-1],a[i] = a[i],a[i-1]
 
-bsort_modern(pomniejsz_tab(nazwa_modern))
+bsort_modern_rev(pomniejsz_tab(nazwa_modern))
 print(nazwa_modern)
