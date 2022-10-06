@@ -31,3 +31,27 @@ def egzamin(jesli):
 print(egzamin("tak")())
 print(egzamin("nie")())
 print(egzamin("blabla")())
+
+
+#przypadek nr 3
+
+def startstop(funkcja):
+
+    def wrapper():
+        print("startowanie aplikacji.....")
+        funkcja()
+        print("zamykanie procesu aplikacji...")
+    return wrapper
+def zawijanie():
+    print("zawijanie czekoladek w sreberka...")
+
+print("________________________________")
+z = startstop(zawijanie)
+z()
+
+print("________________________________")
+@startstop
+def bieganie():
+    print("bieganie tu i tam....")
+
+bieganie()
