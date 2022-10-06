@@ -17,3 +17,13 @@ for i in itertools.cycle('AB'):
     else:
         print(i, end=" ")
         count += 1
+
+        
+        #przykład 3
+
+fitness = ['trening','siła','regenracja','dieta','zawody']
+iterators = itertools.cycle(fitness)
+print()
+print("______________________________________")
+for i in range(18):
+    print(next(iterators), end=" ")
