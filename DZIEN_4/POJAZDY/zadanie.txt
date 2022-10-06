@@ -1,0 +1,7 @@
+
+Krok 1
+#w module pojazd -> Stwórz klasę abstrakcyjną Pojazd z konstruktorem opartym na polach:
+#marka,model, rok_prod,rodzaj_napedu,kolor
+#stwórz dla tej klasy metody getter i setter oraz metodę abstrakcyjną naped()
+
+
