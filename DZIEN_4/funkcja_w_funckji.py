@@ -55,3 +55,31 @@ def bieganie():
     print("bieganie tu i tam....")
 
 bieganie()
+
+#przykład nr 4
+
+import time
+
+def pomiarczasu(funkcja):
+    def wrapper():
+        starttime = time.perf_counter()
+        funkcja()
+        endtime = time.perf_counter()
+        print(f"czas wykonania funckji: {endtime-starttime} s")
+    return wrapper
+
+@pomiarczasu
+def dzialanie():
+    sum([i**2 for i in range(10000000)])
+
+dzialanie()
+
+
+@pomiarczasu
+def dzialanie_classic():
+    wynik = []
+    for i in range(10000000):
+        wynik.append(i**2)
+    sum(wynik)
+
+dzialanie_classic()
