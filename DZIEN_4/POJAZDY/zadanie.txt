@@ -11,3 +11,17 @@ Krok 2
 #dopisz gety i sety dla tych pól (3)
 #napisz metodę daneroweru() -> wypisz (za pomocą getów) informacje: marka,model,rok_prod,waga_ramy
 #zaimplementuj metodę naped() -> wypisz (za pomocą getów) dane: przerzutka oraz rodzaj_napędu
+
+
+Krok3
+#w nowym module samochod -> stwórz klasę Samochod (dziedziczącą Pojzad) z konstruktorem pobraanym z dzidziczenia
+#konstruktor rozbudj o minimum dwa pola charakterystyczne tylko dla samochodu: pojemnosc,moc
+#uzupełnij klasę o dodatkowe gety i sety
+#stwórz metodę która będzie przydzialała prędkość max w stosunku do zadanej pojemności silnika P:
+# P <= 1.0 Pmax -> 140
+# P <= 1.5 Pmax -> 160
+# P <= 1.8 Pmax -> 190
+# P <= 2.0 Pmax -> 210
+# P <= 2.4 Pmax -> 250
+#powyzej 2.4 -> większe niż 250
+#zaimplementuj obowiązkowo metodę naped() i skonstruuj ją w sposób opisujący napęd samochodu
