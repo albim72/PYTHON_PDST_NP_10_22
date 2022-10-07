@@ -23,6 +23,10 @@ class Platon(metaclass=SednoOdpowiedzi):
 
 class SwTomasz(metaclass=SednoOdpowiedzi):
     pass
+class Kopernik(metaclass=SednoOdpowiedzi):
+    def odpowiedz_new(self):
+        return "Nie! Ziemia jest okrągła i się kręci!"
+
 
 fil1 = Arystoteles()
 print(fil1.odpowiedz())
@@ -32,3 +36,6 @@ print(fil2.odpowiedz())
 
 fil3= SwTomasz()
 print(fil3.odpowiedz())
+
+fil4= Kopernik()
+print(fil4.odpowiedz_new())
