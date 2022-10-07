@@ -43,3 +43,10 @@ class UchwytFilmu(xml.sax.ContentHandler):
             self.czas_t = content
         elif self.CurrentData == "gatunek":
             self.gatunek = content
+
+parser = xml.sax.make_parser()
+parser.setFeature(xml.sax.handler.feature_namespaces, 0)
+
+uchwyt = UchwytFilmu()
+parser.setContentHandler(uchwyt)
+parser.parse("filmy.xml")
