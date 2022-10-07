@@ -12,3 +12,15 @@ class FileManager:
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.file.close()
+        
+        
+        
+with FileManager('test.txt','w','utf-8') as f:
+    f.write('to jest test Managera\n')
+
+print(f.closed)
+
+with FileManager('test.txt','r','utf-8') as f:
+    print(f.read())
+
+print(f.closed)
