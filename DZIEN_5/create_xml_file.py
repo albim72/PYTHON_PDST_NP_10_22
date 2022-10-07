@@ -33,6 +33,12 @@ id.text = '61900'
 
 wyp_dod = SubElement(sam1,"wyp_dodatkowe")
 
+
+print(pretty(top))
+
+zapis = open("subaru.xml","a",encoding="utf-8")
+zapis.write(pretty(top))
+zapis.close()
 kolor = SubElement(wyp_dod,"kolor")
 kolor.text = 'czarna perła'
 
