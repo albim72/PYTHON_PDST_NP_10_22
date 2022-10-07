@@ -7,5 +7,10 @@ try:
     for child in root:
         print(f"tag: {child.tag}, atrybuty: {child.attrib}")
 
+    print(root[0])
+    print(root[0][1])
+    print(root[0][1].text)
+    print(root[3].text)
+
 except:
     print("element nie iestnieje!")
